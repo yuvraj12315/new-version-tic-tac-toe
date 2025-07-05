@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tic tac toe</title>
+    <link rel="stylesheet" href="todo.css">
+  <i class="fa-solid fa-chess-king"></i>
+</head>
+<body>
+     <h1 class="title">
+        Tic Tac Toe
+    </h1>
+    <div id="nameDiv">
+      <label></label><input id="userNameInput" type="text" placeholder="Enter Player 1 name" /></label>
+      <input id="userNameInput2" type="text" placeholder="Enter Player 2 name" style="margin-left:10px;" />
+        <button id="setNameBtn">Set Name</button>
+    </div>
+    <div id="scoreboard">
+        <span id="player1Name">Player</span>: <span id="playerScore">0</span> |
+        <span id="player2Name">Computer</span>: <span id="computerScore">0</span> |
+        Draws: <span id="drawScore">0</span>
+    </div>
+    <button id="modeBtn">Switch to 2 Player Mode</button>
+    <button id="hardBtn">Switch to Hard Mode</button>
+    <div id="msg-text" class="hide">
+        <p id="msg">Winner</p>
+        <button id="game">Play again !</button>
+    </div>
+    <main>
+   
+    <div class="container">
+    <div class="border">
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+    </div> 
+    </div>
+    <button id="resetBtn">Reset</button>
+    <button id="muteBtn" aria-label="Mute/Unmute" title="Mute/Unmute"></button>
+    </main>
+    <audio id="clickSound" src="https://cdn.pixabay.com/download/audio/2025/06/09/audio_a113c58cc3.mp3?filename=digital-click-357350.mp3
+"></audio>
+    <audio id="winSound" src="https://cdn.pixabay.com/download/audio/2022/03/10/audio_0118d29a47.mp3?filename=game-win-36082.mp3"></audio>
+    <audio id="drawSound" src="https://cdn.pixabay.com/download/audio/2024/08/07/audio_42938daf19.mp3?filename=sweet-game-over-sound-effect-230470.mp3"></audio>
+    <script src="app.js"></script>
+</body>
+</html>
